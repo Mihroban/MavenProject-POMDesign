@@ -21,7 +21,6 @@ public class HomePage extends BaseClass {
 	@FindBy(xpath = "//button[contains(@type,'submit')]")
 	public static WebElement searchBtn;
 
-	// @FindBy(xpath="//*[@id='content']/div/div/div/div/div[3]/div[2]/div[1]/div[1]/div/h1")
 	// public static WebElement resultText;
 
 	@FindBy(xpath = "//h1[@class = 'display-inline text-smaller']")
