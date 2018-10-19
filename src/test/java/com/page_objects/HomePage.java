@@ -21,9 +21,6 @@ public class HomePage extends BaseClass {
 	@FindBy(xpath = "//button[contains(@type,'submit')]")
 	public static WebElement searchBtn;
 
-	// @FindBy(xpath="//*[@id='content']/div/div/div/div/div[3]/div[2]/div[1]/div[1]/div/h1")
-	// public static WebElement resultText;
-
 	@FindBy(xpath = "//h1[@class = 'display-inline text-smaller']")
 	public static WebElement resultText;
 
@@ -42,8 +39,6 @@ public class HomePage extends BaseClass {
 
 	/**
 	 * @author miheliwanaishamuding
-	 *
-	 * @return innerText
 	 * 
 	 * this is the function which get element text
 	 */
@@ -51,24 +46,5 @@ public class HomePage extends BaseClass {
 		return resultText.getText();
 	}
 
-	// public void isTextPresent(String txt){
-	// if(driver.getPageSource().equals(resultText))
-	// {
-	// System.out.println("Text is Present");
-	// }
-	// else
-	// {
-	// System.out.println("Text is not Present");
-	// }
-	// }
-
-	// if(resultText != null)
-	// {
-	// System.out.println("Text is Present");
-	// }
-	// else
-	// {
-	// System.out.println("Text is not Present");
-	// }
 
 }
