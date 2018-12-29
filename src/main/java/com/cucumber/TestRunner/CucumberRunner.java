@@ -1,11 +1,13 @@
 package com.cucumber.TestRunner;
 
 import org.junit.runner.RunWith;
+import org.testng.annotations.Test;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+//import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@RunWith(Cucumber.class)
+//@RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin = {"pretty", "html:target/cucumber-html-report"},
 		features = "Features",
@@ -15,8 +17,15 @@ import cucumber.api.junit.Cucumber;
 		}
 		
 		)
-public class CucumberRunner {
+//public class CucumberRunner {
+//
+//}
+
+@Test
+public class CucumberRunner extends AbstractTestNGCucumberTests{
 
 }
+
+
 
 

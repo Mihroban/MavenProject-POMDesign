@@ -43,4 +43,10 @@ public class SearchStep {
 		Assert.assertEquals("dress", home.getText());
 	}
 	
+	@Then("^close the browser$")
+	public void close_the_browser() throws Throwable {
+		Thread.sleep(2000);
+		home.closeDriver();
+	}
+	
 }

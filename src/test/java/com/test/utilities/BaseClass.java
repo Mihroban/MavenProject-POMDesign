@@ -31,7 +31,7 @@ public class BaseClass {
 	public HomePage navigateToApp(String url, String chromeDriverPath){
 		System.setProperty("webdriver.chrome.driver",chromeDriverPath);
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.navigate().to(url);
 		return new HomePage(driver);

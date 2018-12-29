@@ -46,5 +46,4 @@ public class HomePage extends BaseClass {
 		return resultText.getText();
 	}
 
-
 }
